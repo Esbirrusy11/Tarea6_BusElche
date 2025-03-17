@@ -12,6 +12,10 @@ public class ParadaBus{
         this.tiempo = tiempo;
     }
 
+    public ParadaBus() {
+    }
+
+
     public int getNum() {
         return num;
     }
@@ -22,6 +26,10 @@ public class ParadaBus{
 
     public String getDireccion() {
         return direccion;
+    }
+
+    public int getTiempo() {
+        return tiempo;
     }
 
     @Override
