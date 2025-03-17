@@ -15,16 +15,11 @@ public class LineaBus {
         return letra;
     }
 
+    public Set<ParadaBus> getParadabus() {
+        return paradabus;
+    }
 
-    public void validarletra(String l){
-
-        if (l.length()>1){
-            System.out.println("La letra de la línea no puede más de 1 caracteres");
-        }
-        char pri=l.charAt(0);
-        if (!Character.isLetter(pri)){
-            System.out.println("Tiene que ser una letra");
-        }
+    public LineaBus() {
     }
 
     public boolean addParada(ParadaBus pb){
@@ -35,7 +30,9 @@ public class LineaBus {
             return false;
         }
     }
-
+    public boolean contieneParada(ParadaBus parada) {
+        return this.paradabus.contains(parada);
+    }
     @Override
     public String toString() {
         return "LineaBus= " +
